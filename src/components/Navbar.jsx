@@ -3,7 +3,7 @@ import logo from '../assets/Logo.jpg'
 
 const Navbar = () => {
   return (
-    
+    <>
         <div className="flex items-center justify-between gap-64 px-4 py-2">
         <div className='w-24 ml-8 mt-5'> <img src={logo}/></div>
           <div className="flex space-x-4">
@@ -28,19 +28,27 @@ const Navbar = () => {
             </span>
           </div>
 
+          <div  className="">
+         <button className=' hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-md'>Login</button>
+        <button className=' hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-md'><a>Sign up</a> </button>
+          </div>
+        </div>
+        
+        <div>
           {/* Search Section */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 justify-end mr-10">
             <input
               type="text"
               placeholder="Search items"
-              className="rounded-md border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+              className="rounded-md border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-2 
+              focus:ring-orange-500 focus:border-orange-500 w-96"
             />
-            <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none 
+            focus:ring-2 focus:ring-orange-500">
               Search
             </button>
-          </div>
-        </div>
-    
+          </div></div>
+        </>    
   )
 }
 

@@ -8,9 +8,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between gap-64 px-4 py-2">
         <div className='w-24 ml-8 mt-5'> <img src={logo}/></div>
           <div className="flex space-x-4">
-            <span className="text-white font-semibold text-sm px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <Link to={'/'} className="text-white font-semibold text-sm px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
               Home
-            </span>
+            </Link>
             <span className="text-white font-semibold text-sm px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
               About
             </span>
@@ -29,8 +29,8 @@ const Navbar = () => {
             </span>
           </div>
           <div>
-            <Link className=' hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-md'>Login</Link>
-            <Link className=' hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-md'>Sign up</Link>
+            <Link to={'/login'} className=' hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-md'>Login</Link>
+            <Link to={'/signup'} className=' hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-md'>Sign up</Link>
           </div>
         </div>
         

@@ -1,9 +1,10 @@
 import React from 'react'
+import Card from './Card'
 
 const Home = () => {
   return (
     <div className='text-white'>
-      this is home page
+      <Card/>
     </div>
   )
 }
